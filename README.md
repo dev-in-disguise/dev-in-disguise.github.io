@@ -1,1 +1,1 @@
-# dev-in-disguise.github.io
+<img src="dev-in-disguise.jpg" alt="Dev-In-Disguise Icon" title="Dev-In-Disguise Icon" width="50" style="border-radius:50%" />
