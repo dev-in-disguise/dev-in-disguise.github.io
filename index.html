@@ -1,15 +1,24 @@
 <html>
 <head>
+	<title>Blog in Disguise</title>
 </head>
-<body bgcolor="black">
-	<div style="display: flex; justify-content: center;align-items: center;">
-		<a href="about.md" target="content-frame">
-			<img src="dev-in-disguise.jpg" alt="Dev-In-Disguise Icon" title="Dev-In-Disguise Icon" width="50" height="50" style="border-radius:50%" />
-		</a>
-		<h1 style="margin-left:15px; color:white">Blog in Disguise</h1>
+<body style="background-color: rgba(31,31,31,1.0); color: white;">
+	<div id="header">
+		<div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+			<a href="about.html" target="content-frame">
+				<img src="dev-in-disguise.jpg" alt="Dev-In-Disguise Icon" title="Dev-In-Disguise Icon" width="50" height="50" style="border-radius:50%" />
+			</a>
+			<h1 style="margin-left:20px;font-size: 50px;">Blog in Disguise</h1>
+		</div>
+		<p style="text-align: center;margin-top: 0px;">Ramblings of a .NET developer</p>
 	</div>
-	<div style="text-align: center;">
-		<iframe name="content-frame" style="border:none; color: white;"></iframe>
+	<div id="menu-container" style="display: flex; align-items: center; justify-content: center;margin-top: 30px;">
+		<a href="home.html" target="content-frame" style="text-decoration: none; color: white; border-style: solid; border-bottom-style: none; border-width: 1px; border-color: rgba(113,96,232,1); border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 9px;margin-right: 0px;margin-left: 0px;margin-bottom: 0px;">Home</a>
+		<a href="about.html" target="content-frame" style="text-decoration: none; color: white; border-style: solid; border-bottom-style: none; border-left-style: none; border-width: 1px; border-color: rgba(113,96,232,1); border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 9px;margin-right: 0px;margin-left: 0px;margin-bottom: 0px;;">About</a>
+	</div>
+	<hr style="height: 1px;border-width:0; color: rgba(113,96,232,1); background-color: rgba(113,96,232,1);margin-top: 0px;" />
+	<div style="text-align:center">
+		<iframe name="content-frame" src="home.html" style="border:none; color: white; width: 100%;"></iframe>		
 	</div>
 </body>
 </html>
