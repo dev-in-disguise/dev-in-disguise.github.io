@@ -2,24 +2,25 @@
 <html>
 <head>
 	<title>Blog in Disguise</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
-<body style="background-color: rgba(31,31,31,1.0); color: white;">
+<body>
 	<div id="header">
 		<a href="home.html" target="content-frame" onclick="storeLatestContent('home')">
-			<div style="display: flex; justify-content: center; align-items: center; width: 100%;">
-			<img src="dev-in-disguise.jpg" alt="Dev-In-Disguise Icon" title="Dev-In-Disguise Icon" width="50" height="50" style="border-radius:50%" />
-			<h1 style="margin-left:20px;font-size: 50px;color:white;text-decoration:underline rgba(113,96,232,1);">Blog in Disguise</h1>
+			<div class="flex-centered">
+				<img id="icon-image" src="dev-in-disguise.jpg" alt="Dev-In-Disguise Icon" title="Dev-In-Disguise Icon" />
+				<h1 id="blog-title">Blog in Disguise</h1>
 			</div>
 		</a>
-		<p style="text-align: center;margin-top: 0px;">Ramblings of a .NET developer</p>
+		<p id="blog-subtitle">Ramblings of a .NET developer</p>
 	</div>
-	<div id="menu-container" style="display: flex; align-items: center; justify-content: center;margin-top: 30px;">
-		<a href="home.html" target="content-frame" onclick="storeLatestContent('home')" style="text-decoration: none; color: white; border-style: solid; border-bottom-style: none; border-width: 1px; border-color: rgba(113,96,232,1); border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 9px;margin-right: 0px;margin-left: 0px;margin-bottom: 0px;">Home</a>
-		<a href="about.html" target="content-frame" onclick="storeLatestContent('about')" style="text-decoration: none; color: white; border-style: solid; border-bottom-style: none; border-left-style: none; border-width: 1px; border-color: rgba(113,96,232,1); border-top-left-radius: 5px; border-top-right-radius: 5px; padding: 9px;margin-right: 0px;margin-left: 0px;margin-bottom: 0px;;">About</a>
+	<div id="menu-container" class="flex-centered">
+		<a href="home.html" target="content-frame" onclick="storeLatestContent('home')" class="menu-item-common">Home</a>
+		<a href="about.html" target="content-frame" onclick="storeLatestContent('about')" class="menu-item-common" style="border-left-style: none;">About</a>
 	</div>
-	<hr style="height: 1px;border-width:0; color: rgba(113,96,232,1); background-color: rgba(113,96,232,1);margin-top: 0px;" />
-	<div style="text-align:center">
-		<iframe name="content-frame" id="content-frame" style="border:none; color: white; width: 100%;"></iframe>		
+	<hr id="heading-content-divider" />
+	<div>
+		<iframe name="content-frame" id="content-frame"></iframe>		
 	</div>
 
 	<script>

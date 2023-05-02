@@ -1,0 +1,64 @@
+:root {
+    --dot-net-violet: rgba(113,96,232,1);
+}
+
+body {
+    background-color: rgba(31,31,31,1.0); 
+    color: white;
+    text-align: center;
+}
+
+.flex-centered {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#icon-image {
+    width: 50px; 
+    height: 50px; 
+    border-radius:50%;
+}
+
+#blog-title {
+    margin-left:20px;
+    font-size: 50px;
+    color:white;
+    text-decoration:underline var(--dot-net-violet);
+}
+
+#blog-subtitle {
+    margin-top: 0px;
+}
+
+#menu-container {
+    margin-top: 30px;
+}
+
+.menu-item-common {
+    text-decoration: none; 
+    color: white; 
+    border-style: solid; 
+    border-bottom-style: none; 
+    border-width: 1px; 
+    border-color: var(--dot-net-violet);
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px; 
+    padding: 9px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+#heading-content-divider {
+    height: 1px;
+    border-width:0; 
+    color: var(--dot-net-violet);
+    background-color: var(--dot-net-violet);
+    margin-top: 0px;
+}
+
+#content-frame {
+    border:none; 
+    width: 100%;
+}
