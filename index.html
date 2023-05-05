@@ -2,11 +2,12 @@
 <html>
 <head>
 	<title>Blog in Disguise</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.css" />
+	<script type="text/javascript" src="index.js"></script>
 </head>
 <body>
 	<div id="header">
-		<a href="home.html" target="content-frame" onclick="storeLatestContent('home')">
+		<a href="home.html" target="content-frame" data-links-to="home">
 			<div class="flex-centered">
 				<img id="icon-image" src="dev-in-disguise.jpg" alt="Dev-In-Disguise Icon" title="Dev-In-Disguise Icon" />
 				<h1 id="blog-title">Blog in Disguise</h1>
@@ -15,39 +16,12 @@
 		<p id="blog-subtitle">Ramblings of a .NET developer</p>
 	</div>
 	<div id="menu-container" class="flex-centered">
-		<a href="home.html" target="content-frame" onclick="storeLatestContent('home')" class="menu-item-common">Home</a>
-		<a href="about.html" target="content-frame" onclick="storeLatestContent('about')" class="menu-item-common" style="border-left-style: none;">About</a>
+		<a href="home.html" target="content-frame" data-links-to="home" class="menu-item-common">Home</a>
+		<a href="about.html" target="content-frame" data-links-to="about" class="menu-item-common" style="border-left-style: none;">About</a>
 	</div>
 	<hr id="heading-content-divider" />
 	<div>
 		<iframe name="content-frame" id="content-frame"></iframe>		
 	</div>
-
-	<script>
-		if (
-  			(window.performance.navigation && window.performance.navigation.type === 1) 
-			|| 
-			window.performance
-				.getEntriesByType('navigation')
-				.map((nav) => nav.type)
-				.includes('reload')
-		)
-		{
-			const initialState = localStorage.getItem('iframeContent');
-			if (initialState === 'about') {
-				document.getElementById('content-frame').src = 'about.html';
-			} else if (initialState === 'home') {
-				document.getElementById('content-frame').src = 'home.html';
-			} else {
-				document.getElementById('content-frame').src = 'invalid-content.html'
-			}
-		} else {
-			document.getElementById('content-frame').src = 'home.html';
-		}
-	  
-		function storeLatestContent(content) {
-		  localStorage.setItem('iframeContent', content);
-		}
-	  </script>
 </body>
 </html>
