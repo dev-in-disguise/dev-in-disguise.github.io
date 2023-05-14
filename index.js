@@ -13,20 +13,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
     )
     {
         const sites = new Map([
-            ['about', 'about.html'],
-            ['home', 'home.html']
+            ['about', 'pages/about/about.html'],
+            ['blog-overview', 'pages/blog/overview/blog-overview.html']
         ]);
-        
+
         const initialState = localStorage.getItem('iframeContent');
         let site = sites.get(initialState); 
 
         if (site !== undefined) {
             document.getElementById('content-frame').src = site;
         } else {
-            document.getElementById('content-frame').src = 'invalid-content.html'
+            document.getElementById('content-frame').src = 'pages/invalid-content/invalid-content.html'
         } 
     } else {
-      document.getElementById('content-frame').src = 'home.html';
+      document.getElementById('content-frame').src = 'pages/blog/overview/blog-overview.html';
     }
 });
 

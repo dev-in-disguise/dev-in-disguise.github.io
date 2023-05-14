@@ -1,0 +1,10 @@
+:root {
+    --dot-net-violet: rgba(113,96,232,1);
+    --text-color: white;
+}
+
+.flex-centered {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}

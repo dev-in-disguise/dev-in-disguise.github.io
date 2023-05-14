@@ -1,17 +1,9 @@
-:root {
-    --dot-net-violet: rgba(113,96,232,1);
-}
+@import "resources/styles/global-styles.css";
 
 body {
     background-color: rgba(31,31,31,1.0); 
-    color: white;
+    color: var(--text-color);
     text-align: center;
-}
-
-.flex-centered {
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
 }
 
 #icon-image {
@@ -23,7 +15,7 @@ body {
 #blog-title {
     margin-left:20px;
     font-size: 50px;
-    color:white;
+    color:var(--text-color);
     text-decoration:underline var(--dot-net-violet);
 }
 
@@ -37,7 +29,7 @@ body {
 
 .menu-item-common {
     text-decoration: none; 
-    color: white; 
+    color: var(--text-color);
     border-style: solid; 
     border-bottom-style: none; 
     border-width: 1px; 
